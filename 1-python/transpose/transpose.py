@@ -9,16 +9,19 @@ def transpose(lines):
         output = ''
         for rownum in range(input_height):
             output += get_char(input_list, rownum, colnum)
-        # output = output.rstrip('*').replace('*', ' ')
+        output = output.rstrip('*').replace('*', ' ')
         output_list.append(output)
 
     return '\n'.join(output_list)
 
 def get_input_width(input_list):
-    return 0
+    return len(max(input_list, key= len))
 
 def get_char(input_list, rownum, colnum):
-    return ' '
+    try :
+        return input_list[rownum][colnum]
+    except IndexError:
+        return '*'
 
 # print(transpose('ABC\nDEF'))
 # print(transpose('ABC\nDE'))

@@ -1,3 +1,24 @@
+# with python you execute "statements".
+# "simple statements" are the ones that fit in one line.
+# for example: assigning a variable
+x = 6
+# within a statement there can be "expressions"
+# an expression is a piece of python syntax that "evaluates" to some value.
+# python applies things like operators and functions to evaluate expressions
+# as part of executing the statement they're contained in.
+x = (1 + 2 + 3)
+x += 1 # increment x by 1
+
+# "compound statements" are the statements that involve a "block" of indented lines
+# introduced by a colon character (:)
+# if statement
+# while statement
+# for statement
+# try statement
+# function definitions
+# class definitions
+
+
 print('Hello world')
 
 # python has some data types
@@ -37,6 +58,11 @@ print('abcdef'[0:3])  # a substring including 0,1, and 2 (abc)
 # conditionals
 if 3 < 4:
     print('three less than four')
+elif 3 > 4:
+    print('three greater than four')
+else:
+    print('three equal to four')
+
 
 y = []
 y.append(1)
@@ -48,8 +74,30 @@ for q in y:
 
 #get input from standard input using the "input()" function
 
-user_input = input('prompt: ')
+user_input = 0
+while user_input <= 99:
+    try:
+        user_input = int(input('enter a number greater than 99: '))
+    except ValueError:
+        pass
+
+# "handling errors in python":
+# 1. find a way to check if there will be an error before you act
+#      (if statement)
+# 2. just try doing the thing, and handle an error if it happens
+#      (try statement)
 
 print(user_input)
 
 print('done')
+
+def reverse_string(s):
+    x = list(s)
+    x.reverse()
+    return ''.join(x)
+
+def reverse_string_2(s):
+    # return ''.join(reversed(s))
+    return s[::-1]
+
+print(reverse_string_2('asdf'))

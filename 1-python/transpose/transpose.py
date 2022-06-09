@@ -12,13 +12,20 @@ def transpose(string_input):
     for i in range(len(longest_str)):
         output_line = ''
         for text in str_list:
-            if text[i]:
+            try:
                 output_line += text[i]
+            except IndexError:
+                output_line += '*'
+        output_line = output_line.rstrip('*').replace('*', ' ')
         new_list.append(output_line)
 
-    
+
     return '\n'.join(new_list)
 
+
+
+"and"
+"great"
 
 
 # print(transpose('ABC\nDdEF'))

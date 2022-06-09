@@ -1,7 +1,7 @@
 from this import d
 
 
-def transpose(string_input):
+def transpose(string_input = 'ABC\nDdEF'):
     str_list = string_input.split('\n')
 
     new_list = []
@@ -24,8 +24,4 @@ def transpose(string_input):
 
 
 
-"and"
-"great"
-
-
-# print(transpose('ABC\nDdEF'))
+print(transpose())

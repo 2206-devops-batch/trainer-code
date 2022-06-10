@@ -1,0 +1,24 @@
+tuples
+collections, sets, dicts
+comprehensions, generators
+classes (basic)
+builtin functions
+pypi & pip
+file handling: open()/close()
+slice
+identifiers & keywords (review)
+
+modules
+pylint
+unit testing
+classes & objects, dunder methods
+variable scopes/lifetime, namespaces
+lambda expression
+logging
+datetime
+regex
+
+---
+things left to next week
+https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions
+    unpacking args, *args, **kwargs

@@ -8,7 +8,7 @@ x = []
 #    0  1  2  3  4  5  6  7
 x = [1, 2, 3, 7, 3, 1, 7, 4]
 # create list from another sequence
-x = list('abc')
+x2 = list('abc')
 # index into the list with numbers
 # the first element
 x[0]
@@ -158,3 +158,27 @@ else:
 #   will reflect that order (unlike sets)
 
 projects.get('scrabble game').get('url')
+
+data = [ 2, 5, 3, 8 ]
+# comprehensions
+
+collection = []  # any collection not just list
+for x in data:
+    for y in data:
+        if x != 0:
+            collection.append(x * y)
+
+# list comprehension
+collection2 = [x ** 2 for x in data]
+collection2 = [x * y for x in data for y in data if x != 0]
+
+# set comprehension
+set_comp = {x ** 2 for x in data}
+
+# dict comprehension
+nums_to_squares = {x: x ** 2 for x in data}
+squares_to_nums = {x ** 2: x for x in data}
+
+# in python, every file is a "module"
+   # the name of that module is the filename minus the .py
+# one way to execute a module

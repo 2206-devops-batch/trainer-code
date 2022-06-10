@@ -1,4 +1,4 @@
-def transpose(lines):
+def transpose_(lines):
     input_list = lines.split('\n')  # or splitlines
     input_height = len(input_list)
     input_width = get_input_width(input_list)

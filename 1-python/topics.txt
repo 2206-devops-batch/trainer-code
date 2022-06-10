@@ -6,12 +6,11 @@ command-line arguments
 file handling: open()/close()
 debugger
 variable scopes/lifetime, namespaces
-
 modules
 pypi & pip
 identifiers & keywords (review)
 
-
+-------------------------
 
 builtin functions
 generators
@@ -22,6 +21,7 @@ lambda expression
 logging
 datetime
 regex
+packages
 
 ---
 things left to next week

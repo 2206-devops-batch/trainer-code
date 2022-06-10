@@ -1,3 +1,5 @@
+import fibonacci
+
 # pythonic
 def filter_all_gt_20(l):
     # list comprehension syntax
@@ -13,7 +15,8 @@ def filter_all_gt_20_with_loops(l):
 
 
 data = [4,5,6,3,6,78,32,78,0,4,22]
-data = filter_all_gt_20(data)
+data = filter_all_gt_20_with_loops(data)
+print(fibonacci.fib(5))
 
 # print the first number greater than 20
 

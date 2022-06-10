@@ -1,7 +1,29 @@
-# print the first N fibonacci numbers
-n = int(input('choose n: '))
-a, b = 0, 1
-exec('print(a);a, b = b, a + b;' * n)
+import sys
+
+
+# if '-i' in sys.argv:
+# for fancier command-line argument processing:
+#   https://docs.python.org/3/library/argparse.html
+
+
+# return a list of the first N fibonacci numbers
+def fib(n):
+    r = [0, 1]
+    exec('r.append(r[-1] + r[-2]);' * (n-2))
+    return r
+
+
+# if there are any command-line arguments, look there,
+# otherwise, look at standard input
+if __name__ == '__main__':
+    # this code will not run if we are importing the file.
+    # only when we execute it directly
+    if len(sys.argv) > 1:
+        n = int(sys.argv[1])
+    else:
+        n = int(input('choose n: '))
+
+    print(fib(n))
 
 # interpreted vs compiled
 

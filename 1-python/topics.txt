@@ -12,16 +12,18 @@ identifiers & keywords (review)
 
 -------------------------
 
-builtin functions
-generators
-pylint
-unit testing
-classes & objects, dunder methods
 lambda expression
+generators
+
+classes & objects, dunder methods
+builtin functions
+unit testing
+packages
+pylint
 logging
 datetime
 regex
-packages
+requests and json apis
 
 ---
 things left to next week

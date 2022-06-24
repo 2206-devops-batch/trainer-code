@@ -26,6 +26,7 @@ Nice to haves:
 Fallback, when all else fails:
 - GitHub Actions or AWS CodePipeline
 
-Presentation day: Wednesday, July 6
-5-10 minutes demonstration
-At least one visual aid, i.e. flow diagram of your pipeline
+Presentation day: 
+- Wednesday, July 6
+- 5-10 minutes demonstration
+- At least one visual aid, i.e. flow diagram of your pipeline
